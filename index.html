@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Texas Moose Contractors — Honest. Dependable. Results.</title>
+<meta name="description" content="Texas Moose Contractors: project management, commercial & residential, new construction, remodels & additions, and site consulting. Call or text for a conversation.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Texas Moose Contractors">
+<meta property="og:description" content="Honest, dependable results. Quality craftsmanship guaranteed. Safety on every job site.">
+<meta property="og:image" content="assets/hero.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Texas Moose Contractors",
+  "url": "https://www.texasmoosecontractors.com",
+  "email": "max@texasmoosecontractors.com",
+  "telephone": "+1-830-500-0426",
+  "areaServed": "Texas",
+  "description": "Project management, commercial and residential construction, new construction, remodels and additions, and site consulting."
+}
+</script>
+<style>
+:root{
+  --bg:#000;
+  --panel:#0d0d0d;
+  --panel-2:#141414;
+  --line:#262626;
+  --text:#f4f4f4;
+  --muted:#a6a6a6;
+  --red:#c62126;
+  --red-hot:#e8343b;
+  --display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --gutter:clamp(16px,4vw,40px);
+  --max:1200px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.eyebrow{font:600 14px/1 var(--display);letter-spacing:.28em;text-transform:uppercase;color:var(--red-hot);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"★";font-size:13px}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:.95;margin:0;letter-spacing:.01em}
+h2{font-size:clamp(38px,6vw,64px);font-weight:800;margin-top:14px}
+section{padding:clamp(64px,10vw,120px) 0}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 18px/1 var(--display);letter-spacing:.12em;text-transform:uppercase;padding:16px 26px;border:2px solid var(--red);background:var(--red);color:#fff;transition:background .2s,border-color .2s,transform .2s;cursor:pointer;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+.btn:hover{background:var(--red-hot);border-color:var(--red-hot);transform:translateY(-2px)}
+.btn.ghost{background:transparent;border-color:#5a5a5a}
+.btn.ghost:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+.btn svg{width:18px;height:18px;flex:none}
+:focus-visible{outline:2px solid var(--red-hot);outline-offset:3px}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+.nav.solid{background:rgba(0,0,0,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.nav img{height:44px;width:auto}
+.nav ul{display:flex;gap:32px;list-style:none;margin:0;padding:0}
+.nav ul a{font:600 16px/1 var(--display);letter-spacing:.16em;text-transform:uppercase;color:#ddd;transition:color .2s}
+.nav ul a:hover{color:var(--red-hot)}
+.nav .call{font-size:16px;padding:12px 20px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:120px 0 clamp(48px,8vw,90px);overflow:hidden;isolation:isolate}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% center;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.05) 35%,rgba(0,0,0,.8) 88%,#000 100%),linear-gradient(90deg,rgba(0,0,0,.7) 0%,rgba(0,0,0,0) 60%)}
+.hero-logo{width:min(440px,78vw);height:auto;margin:0 0 28px -8px}
+.hero h1{font-size:clamp(46px,9vw,112px);font-weight:800;max-width:11ch}
+.hero h1 em{font-style:normal;color:var(--red-hot)}
+.hero p{max-width:34em;color:#d6d6d6;font-size:clamp(17px,2vw,20px);margin:22px 0 32px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:14px}
+
+/* pillars */
+.pillars{background:var(--panel);border-block:1px solid var(--line);padding:0}
+.pillars .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.pillar{display:flex;align-items:center;gap:20px;padding:34px 28px}
+.pillar+.pillar{border-left:1px solid var(--line)}
+.pillar svg{width:52px;height:52px;flex:none;color:var(--red)}
+.pillar h3{font-size:24px;font-weight:700;line-height:1.05;letter-spacing:.06em}
+
+/* services */
+.services-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.services-head p{max-width:30em;color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.card{position:relative;overflow:hidden;background:var(--panel);border:1px solid var(--line);min-height:340px;display:flex;align-items:flex-end;isolation:isolate;transition:border-color .3s,transform .3s}
+.card:hover{border-color:var(--red);transform:translateY(-4px)}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.card:hover img{transform:scale(1.06)}
+.card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,.92))}
+.card .body{padding:26px}
+.card .num{font:600 14px/1 var(--display);letter-spacing:.24em;color:var(--red-hot)}
+.card h3{font-size:32px;font-weight:700;margin-top:8px}
+.card p{margin:8px 0 0;color:#cfcfcf;font-size:16px;line-height:1.5}
+.card.c2{grid-column:span 2}.card.c3{grid-column:span 3}.card.c4{grid-column:span 4}
+.card.solid{background:var(--red);border-color:var(--red)}
+.card.solid::after{display:none}
+.card.solid .num{color:#fff;opacity:.85}
+.card.solid p{color:#fff}
+.card.solid svg{position:absolute;right:-10px;top:-10px;width:170px;height:170px;opacity:.16}
+
+/* team */
+.team{background:var(--panel);border-block:1px solid var(--line)}
+.people{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.person{background:var(--bg);border:1px solid var(--line);border-top:3px solid var(--red);padding:30px 24px 24px;min-width:0}
+.person .role{font:600 14px/1 var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--red-hot)}
+.person h3{font-size:38px;font-weight:800;margin:12px 0 22px}
+.person a.line{display:flex;align-items:center;gap:10px;color:#ddd;font-size:15px;padding:10px 0;border-top:1px solid var(--line);word-break:break-word;transition:color .2s}
+.person a.line:hover{color:var(--red-hot)}
+.person a.line svg{width:18px;height:18px;flex:none;color:var(--red)}
+.person a.line.phone{font:700 28px/1 var(--display);letter-spacing:.04em}
+.person .cta{display:flex;gap:10px;margin-top:18px}
+.person .cta .btn{flex:1;padding:13px 10px;font-size:16px}
+
+/* contact */
+.contact{position:relative;text-align:center;overflow:hidden;isolation:isolate}
+.contact::before{content:"";position:absolute;left:50%;top:50%;width:900px;height:900px;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(198,33,38,.32),transparent);z-index:-1}
+.contact .eyebrow{justify-content:center}
+.contact h2{font-size:clamp(44px,8vw,96px)}
+.contact p{color:var(--muted);max-width:30em;margin:18px auto 34px}
+.contact .big{display:block;font:800 clamp(48px,11vw,132px)/1 var(--display);letter-spacing:.02em;margin:0 0 34px}
+.contact .big:hover{color:var(--red-hot)}
+.contact .actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center}
+footer img{height:40px;width:auto}
+.nav img,footer img{aspect-ratio:1850/1110}
+footer a:hover{color:#fff}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .card,.card img,.btn{transition:none}
+}
+
+@media (max-width:900px){
+  .nav ul{display:none}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .card.c2,.card.c3,.card.c4{grid-column:span 1}
+  .card.wide{grid-column:span 2}
+  .people{grid-template-columns:1fr}
+}
+@media (max-width:700px){
+  .pillars .wrap{grid-template-columns:1fr}
+  .pillar+.pillar{border-left:0;border-top:1px solid var(--line)}
+  .pillar{padding:24px 4px}
+  .grid{grid-template-columns:1fr}
+  .card.wide{grid-column:auto}
+  .card{min-height:280px}
+  .hero .actions .btn{flex:1 1 100%}
+  .hero-logo{margin-left:0}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" aria-label="Texas Moose Contractors — home"><img src="assets/logo.webp" alt="Texas Moose Contractors" width="1850" height="1110"></a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn call" href="#contact">Call or Text</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <img src="assets/hero.webp" alt="" fetchpriority="high">
+    <div class="wrap">
+      <img class="hero-logo" src="assets/logo.webp" alt="Texas Moose Contractors" width="1850" height="1110">
+      <h1>Built <em>honest.</em> Built to last.</h1>
+      <p>Commercial and residential construction, from the first site walk to the final punch list. Honest, dependable results with quality craftsmanship guaranteed.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Call or Text Us</a>
+        <a class="btn ghost" href="#services">What We Build</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pillars" aria-label="Our promise">
+    <div class="wrap">
+      <div class="pillar rv">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M32 5 9 13v17c0 14 9 24 23 29 14-5 23-15 23-29V13z"/><path d="m21 32 8 8 15-16"/></svg>
+        <h3>Honest<br>Dependable<br>Results</h3>
+      </div>
+      <div class="pillar rv">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><circle cx="32" cy="32" r="10"/><path d="M32 6v8M32 50v8M6 32h8M50 32h8M13.6 13.6l5.7 5.7M44.7 44.7l5.7 5.7M13.6 50.4l5.7-5.7M44.7 19.3l5.7-5.7"/></svg>
+        <h3>Quality<br>Craftsmanship<br>Guaranteed</h3>
+      </div>
+      <div class="pillar rv">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M10 44c0-14 9-26 22-26s22 12 22 26z"/><path d="M28 18V10h8v8M5 50h54"/></svg>
+        <h3>Safety<br>On Every<br>Job Site</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="services-head rv">
+        <div>
+          <div class="eyebrow">What we do</div>
+          <h2>Five ways we<br>get it done</h2>
+        </div>
+        <p>One crew that understands the whole job. Whether it's a storefront, a custom home, or a lot that's still just dirt.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card c4 rv">
+          <img src="assets/commercial.webp" alt="Commercial steel-frame building under construction at dusk" loading="lazy">
+          <div class="body">
+            <div class="num">01</div>
+            <h3>Commercial &amp; Residential</h3>
+            <p>Offices, retail, and custom homes, built to the same standard.</p>
+          </div>
+        </article>
+        <article class="card c2 solid rv">
+          <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M8 8h48v40H8zM8 20h48M20 8v40M14 56h36"/></svg>
+          <div class="body">
+            <div class="num">02</div>
+            <h3>Project Management</h3>
+            <p>Schedules, subs, budgets, and paperwork handled, so you're not.</p>
+          </div>
+        </article>
+        <article class="card c2 rv">
+          <img src="assets/residential.webp" alt="Timber-frame and limestone home under construction in the Texas Hill Country" loading="lazy">
+          <div class="body">
+            <div class="num">03</div>
+            <h3>New Construction</h3>
+            <p>Ground-up builds, planned right from the first stake.</p>
+          </div>
+        </article>
+        <article class="card c2 rv">
+          <img src="assets/remodel.webp" alt="Interior remodel with exposed framing and fresh drywall" loading="lazy">
+          <div class="body">
+            <div class="num">04</div>
+            <h3>Remodels &amp; Additions</h3>
+            <p>More room, better layout, done clean and on schedule.</p>
+          </div>
+        </article>
+        <article class="card c2 rv">
+          <img src="assets/consulting.webp" alt="Blueprints, hard hat and tablet on a truck tailgate at a job site" loading="lazy">
+          <div class="body">
+            <div class="num">05</div>
+            <h3>Site Consulting</h3>
+            <p>Straight answers before you commit to a lot, a plan, or a bid.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <div class="wrap">
+      <div class="rv">
+        <div class="eyebrow">The team</div>
+        <h2>Talk to a person</h2>
+      </div>
+      <div class="people">
+        <article class="person rv">
+          <div class="role">Owner</div>
+          <h3>Max Kutscher</h3>
+          <a class="line phone" href="tel:+18305000426">830-500-0426</a>
+          <a class="line" href="mailto:max@texasmoosecontractors.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>max@texasmoosecontractors.com</a>
+          <div class="cta"><a class="btn" href="tel:+18305000426">Call</a><a class="btn ghost" href="sms:+18305000426">Text</a></div>
+        </article>
+        <article class="person rv">
+          <div class="role">CEO &amp; Owner</div>
+          <h3>Robert Alanis</h3>
+          <a class="line phone" href="tel:+18307303825">830-730-3825</a>
+          <a class="line" href="mailto:robert@texasmoosecontractors.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>robert@texasmoosecontractors.com</a>
+          <div class="cta"><a class="btn" href="tel:+18307303825">Call</a><a class="btn ghost" href="sms:+18307303825">Text</a></div>
+        </article>
+        <article class="person rv">
+          <div class="role">Consultant</div>
+          <h3>Summer Kutscher</h3>
+          <a class="line phone" href="tel:+15129681991">512-968-1991</a>
+          <a class="line" href="mailto:summer@texasmoosecontractors.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg>summer@texasmoosecontractors.com</a>
+          <div class="cta"><a class="btn" href="tel:+15129681991">Call</a><a class="btn ghost" href="sms:+15129681991">Text</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap rv">
+      <div class="eyebrow">Let's talk</div>
+      <h2>Got a project?</h2>
+      <p>Call or text. You'll get a real person and a straight answer.</p>
+      <a class="big" href="tel:+18305000426">830-500-0426</a>
+      <div class="actions">
+        <a class="btn" href="tel:+18305000426">Call Max</a>
+        <a class="btn ghost" href="sms:+18305000426">Text Max</a>
+        <a class="btn ghost" href="mailto:max@texasmoosecontractors.com">Email</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo.webp" alt="Texas Moose Contractors" width="1850" height="1110">
+    <span>&copy; <span id="yr">2026</span> Texas Moose Contractors. All rights reserved.</span>
+    <a href="https://www.texasmoosecontractors.com">www.texasmoosecontractors.com</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  function onScroll(){nav.classList.toggle('solid',window.scrollY>40)}
+  onScroll();addEventListener('scroll',onScroll,{passive:true});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e,i){e.style.transitionDelay=(i%3)*80+'ms';io.observe(e)});
+})();
+</script>
+</body>
+</html>
