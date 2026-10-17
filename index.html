@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Texas Moose Contractors — Honest. Dependable. Results.</title>
-<meta name="description" content="Texas Moose Contractors: project management, commercial & residential, new construction, remodels & additions, and site consulting. Call or text for a conversation.">
+<meta name="description" content="Texas Moose Contractors builds custom homes, remodels and additions across Central Texas. Project management and site consulting too. Call or text for a free estimate.">
 <meta name="theme-color" content="#000000">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Texas Moose Contractors">
-<meta property="og:description" content="Honest, dependable results. Quality craftsmanship guaranteed. Safety on every job site.">
+<meta property="og:description" content="Custom homes, remodels and additions across Central Texas. Honest, dependable results. Free estimates.">
 <meta property="og:image" content="assets/hero.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,8 +22,8 @@
   "url": "https://www.texasmoosecontractors.com",
   "email": "max@texasmoosecontractors.com",
   "telephone": "+1-830-500-0426",
-  "areaServed": "Texas",
-  "description": "Project management, commercial and residential construction, new construction, remodels and additions, and site consulting."
+  "areaServed": "Central Texas",
+  "description": "Custom homes, remodels and additions, project management, and site consulting in Central Texas. Commercial projects also welcome."
 }
 </script>
 <style>
@@ -73,8 +73,8 @@ section{padding:clamp(64px,10vw,120px) 0}
 
 /* hero */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:120px 0 clamp(48px,8vw,90px);overflow:hidden;isolation:isolate}
-.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% center;z-index:-2}
-.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.05) 35%,rgba(0,0,0,.8) 88%,#000 100%),linear-gradient(90deg,rgba(0,0,0,.7) 0%,rgba(0,0,0,0) 60%)}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% center;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,.2) 30%,rgba(0,0,0,.85) 88%,#000 100%),linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.6) 40%,rgba(0,0,0,.1) 80%)}
 .hero-logo{width:min(440px,78vw);height:auto;margin:0 0 28px -8px}
 .hero h1{font-size:clamp(46px,9vw,112px);font-weight:800;max-width:11ch}
 .hero h1 em{font-style:normal;color:var(--red-hot)}
@@ -97,7 +97,7 @@ section{padding:clamp(64px,10vw,120px) 0}
 .card:hover{border-color:var(--red);transform:translateY(-4px)}
 .card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
 .card:hover img{transform:scale(1.06)}
-.card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,.92))}
+.card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.05) 15%,rgba(0,0,0,.93))}
 .card .body{padding:26px}
 .card .num{font:600 14px/1 var(--display);letter-spacing:.24em;color:var(--red-hot)}
 .card h3{font-size:32px;font-weight:700;margin-top:8px}
@@ -108,6 +108,33 @@ section{padding:clamp(64px,10vw,120px) 0}
 .card.solid .num{color:#fff;opacity:.85}
 .card.solid p{color:#fff}
 .card.solid svg{position:absolute;right:-10px;top:-10px;width:170px;height:170px;opacity:.16}
+
+
+/* commercial note */
+.also{display:flex;align-items:center;gap:16px;margin-top:16px;padding:18px 24px;border:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:16px}
+.also .tag{font:700 14px/1 var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--red-hot);flex:none}
+.also p{margin:0}
+.also a{color:var(--text);border-bottom:1px solid var(--red)}
+.also a:hover{color:var(--red-hot)}
+
+/* recent work */
+.work{border-top:1px solid var(--line)}
+.pairs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:44px}
+.pair{margin:0;background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--red);min-width:0}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:var(--bg)}
+.shot{position:relative;aspect-ratio:1/1.12;overflow:hidden}
+.shot img{width:100%;height:100%;object-fit:cover}
+.chip{position:absolute;left:12px;bottom:12px;font:700 15px/1 var(--display);letter-spacing:.18em;text-transform:uppercase;padding:8px 12px;background:rgba(0,0,0,.75);color:#fff}
+.chip.hot{background:var(--red)}
+.pair figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;padding:18px 22px}
+.pair figcaption strong{font:800 26px/1 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.pair figcaption span{color:var(--muted);font-size:15px}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px;margin-top:16px}
+.gallery figure{position:relative;margin:0;height:clamp(300px,36vw,460px);overflow:hidden;background:var(--panel);border:1px solid var(--line);min-width:0}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figure::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 65%,rgba(0,0,0,.85))}
+.gallery figcaption{position:absolute;left:18px;right:18px;bottom:16px;z-index:1;font:700 20px/1.1 var(--display);letter-spacing:.06em;text-transform:uppercase}
 
 /* team */
 .team{background:var(--panel);border-block:1px solid var(--line)}
@@ -145,7 +172,7 @@ footer a:hover{color:#fff}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .rv{opacity:1;transform:none;transition:none}
-  .card,.card img,.btn{transition:none}
+  .card,.card img,.btn,.gallery img{transition:none}
 }
 
 @media (max-width:900px){
@@ -154,6 +181,9 @@ footer a:hover{color:#fff}
   .card.c2,.card.c3,.card.c4{grid-column:span 1}
   .card.wide{grid-column:span 2}
   .people{grid-template-columns:1fr}
+  .pairs{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .gallery figure:first-child{grid-column:1/-1}
 }
 @media (max-width:700px){
   .pillars .wrap{grid-template-columns:1fr}
@@ -161,6 +191,8 @@ footer a:hover{color:#fff}
   .pillar{padding:24px 4px}
   .grid{grid-template-columns:1fr}
   .card.wide{grid-column:auto}
+  .also{flex-direction:column;align-items:flex-start;gap:8px}
+  .gallery figure{height:260px}
   .card{min-height:280px}
   .hero .actions .btn{flex:1 1 100%}
   .hero-logo{margin-left:0}
@@ -175,6 +207,7 @@ footer a:hover{color:#fff}
     <nav aria-label="Primary">
       <ul>
         <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -189,7 +222,7 @@ footer a:hover{color:#fff}
     <div class="wrap">
       <img class="hero-logo" src="assets/logo.webp" alt="Texas Moose Contractors" width="1850" height="1110">
       <h1>Built <em>honest.</em> Built to last.</h1>
-      <p>Commercial and residential construction, from the first site walk to the final punch list. Honest, dependable results with quality craftsmanship guaranteed.</p>
+      <p>Custom homes, remodels and additions across Central Texas. Clear communication and quality workmanship from the first call to the final walkthrough. Free estimates.</p>
       <div class="actions">
         <a class="btn" href="#contact">Call or Text Us</a>
         <a class="btn ghost" href="#services">What We Build</a>
@@ -219,52 +252,77 @@ footer a:hover{color:#fff}
       <div class="services-head rv">
         <div>
           <div class="eyebrow">What we do</div>
-          <h2>Five ways we<br>get it done</h2>
+          <h2>Homes built.<br>Homes made better.</h2>
         </div>
-        <p>One crew that understands the whole job. Whether it's a storefront, a custom home, or a lot that's still just dirt.</p>
+        <p>Custom homes, remodels and additions across Central Texas, with clear communication from the first call to the final walkthrough.</p>
       </div>
 
       <div class="grid">
         <article class="card c4 rv">
-          <img src="assets/commercial.webp" alt="Commercial steel-frame building under construction at dusk" loading="lazy">
+          <img src="assets/home-exterior.webp" alt="Modern two-story home with a red front door and glass garage door" loading="lazy">
           <div class="body">
-            <div class="num">01</div>
-            <h3>Commercial &amp; Residential</h3>
-            <p>Offices, retail, and custom homes, built to the same standard.</p>
+            <h3>New Home Construction</h3>
+            <p>Custom homes built from the ground up, planned right from the first stake.</p>
           </div>
         </article>
         <article class="card c2 solid rv">
           <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M8 8h48v40H8zM8 20h48M20 8v40M14 56h36"/></svg>
           <div class="body">
-            <div class="num">02</div>
             <h3>Project Management</h3>
             <p>Schedules, subs, budgets, and paperwork handled, so you're not.</p>
           </div>
         </article>
-        <article class="card c2 rv">
-          <img src="assets/residential.webp" alt="Timber-frame and limestone home under construction in the Texas Hill Country" loading="lazy">
+        <article class="card c3 rv">
+          <img src="assets/kitchen-after.webp" alt="Remodeled kitchen with white cabinets, granite island and new flooring" loading="lazy">
           <div class="body">
-            <div class="num">03</div>
-            <h3>New Construction</h3>
-            <p>Ground-up builds, planned right from the first stake.</p>
-          </div>
-        </article>
-        <article class="card c2 rv">
-          <img src="assets/remodel.webp" alt="Interior remodel with exposed framing and fresh drywall" loading="lazy">
-          <div class="body">
-            <div class="num">04</div>
             <h3>Remodels &amp; Additions</h3>
-            <p>More room, better layout, done clean and on schedule.</p>
+            <p>More room, a better layout, and a job site left clean.</p>
           </div>
         </article>
-        <article class="card c2 rv">
+        <article class="card c3 rv">
           <img src="assets/consulting.webp" alt="Blueprints, hard hat and tablet on a truck tailgate at a job site" loading="lazy">
           <div class="body">
-            <div class="num">05</div>
             <h3>Site Consulting</h3>
             <p>Straight answers before you commit to a lot, a plan, or a bid.</p>
           </div>
         </article>
+      </div>
+
+      <div class="also rv">
+        <span class="tag">Also</span>
+        <p>We take on commercial projects too. <a href="#contact">Call or text to talk through yours.</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="rv">
+        <div class="eyebrow">Recent work</div>
+        <h2>Before. After.<br>Built to last.</h2>
+      </div>
+
+      <div class="pairs">
+        <figure class="pair rv">
+          <div class="shots">
+            <div class="shot"><img src="assets/home-before.webp" alt="Wood-framed two-story home under construction" loading="lazy"><span class="chip">Before</span></div>
+            <div class="shot"><img src="assets/home-after.webp" alt="Finished stucco and stone home at night with lit windows" loading="lazy"><span class="chip hot">After</span></div>
+          </div>
+          <figcaption><strong>Custom home build</strong><span>Central Texas</span></figcaption>
+        </figure>
+        <figure class="pair rv">
+          <div class="shots">
+            <div class="shot"><img src="assets/kitchen-before.webp" alt="Gutted kitchen with old cabinets and a worn floor" loading="lazy"><span class="chip">Before</span></div>
+            <div class="shot"><img src="assets/kitchen-after.webp" alt="Finished kitchen with white cabinets, granite counters and new flooring" loading="lazy"><span class="chip hot">After</span></div>
+          </div>
+          <figcaption><strong>Kitchen remodel</strong><span>San Marcos, Texas</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="gallery">
+        <figure class="rv"><img src="assets/concrete-kitchen.webp" alt="Open kitchen with a shiplap island and polished concrete floors" loading="lazy"><figcaption>Polished concrete &amp; open kitchen</figcaption></figure>
+        <figure class="rv"><img src="assets/staircase.webp" alt="Staircase with a black metal railing and wood treads" loading="lazy"><figcaption>Staircase</figcaption></figure>
+        <figure class="rv"><img src="assets/bathroom.webp" alt="Bathroom with a marble tile shower and double vanity" loading="lazy"><figcaption>Bathroom</figcaption></figure>
       </div>
     </div>
   </section>
@@ -305,7 +363,7 @@ footer a:hover{color:#fff}
     <div class="wrap rv">
       <div class="eyebrow">Let's talk</div>
       <h2>Got a project?</h2>
-      <p>Call or text. You'll get a real person and a straight answer.</p>
+      <p>Call or text for a free estimate. You'll get a real person and a straight answer.</p>
       <a class="big" href="tel:+18305000426">830-500-0426</a>
       <div class="actions">
         <a class="btn" href="tel:+18305000426">Call Max</a>
