@@ -32,7 +32,7 @@ async function reviews(url, env, ctx) {
         "X-Goog-FieldMask": "rating,userRatingCount,reviews,googleMapsUri",
       },
     });
-    if (!res.ok) throw new Error(`details ${res.status}`);
+    if (!res.ok) throw new Error(`details ${res.status}: ${await googleError(res)}`);
     const place = await res.json();
 
     const body = {
@@ -70,11 +70,20 @@ async function findPlaceId(env, cache, origin) {
     },
     body: JSON.stringify({ textQuery: SEARCH_QUERY }),
   });
-  if (!res.ok) throw new Error(`search ${res.status}`);
+  if (!res.ok) throw new Error(`search ${res.status}: ${await googleError(res)}`);
   const id = (await res.json()).places?.[0]?.id;
   if (!id) throw new Error("place not found");
   await cache.put(key, new Response(id, { headers: { "Cache-Control": "max-age=2592000" } }));
   return id;
+}
+
+// Google's error body names the cause (API not enabled, billing, key restrictions).
+async function googleError(res) {
+  try {
+    return (await res.json()).error?.message || res.statusText;
+  } catch {
+    return res.statusText;
+  }
 }
 
 function json(body, status, headers = {}) {
